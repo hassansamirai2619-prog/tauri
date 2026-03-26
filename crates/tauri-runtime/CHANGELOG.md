@@ -1,5 +1,15 @@
 # Changelog
 
+## \[2.11.0]
+
+### New Features
+
+- [`093e2b47c`](https://www.github.com/tauri-apps/tauri/commit/093e2b47c01361c18783e9ff18750388e41650c5) ([#14484](https://www.github.com/tauri-apps/tauri/pull/14484) by [@lucasfernog](https://www.github.com/tauri-apps/tauri/../../lucasfernog)) Support creating multiple windows on Android (activity embedding) and iOS (scenes).
+
+### Dependencies
+
+- Upgraded to `tauri-utils@2.9.0`
+
 ## \[2.10.1]
 
 ### Dependencies

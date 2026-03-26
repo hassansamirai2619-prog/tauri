@@ -1,5 +1,17 @@
 # Changelog
 
+## \[2.9.0]
+
+### New Features
+
+- [`093e2b47c`](https://www.github.com/tauri-apps/tauri/commit/093e2b47c01361c18783e9ff18750388e41650c5) ([#14484](https://www.github.com/tauri-apps/tauri/pull/14484) by [@lucasfernog](https://www.github.com/tauri-apps/tauri/../../lucasfernog)) Support creating multiple windows on Android (activity embedding) and iOS (scenes).
+
+### Dependencies
+
+- [`e032c3b34`](https://www.github.com/tauri-apps/tauri/commit/e032c3b3421f53bca7b869ffee2be105c5c06ad9) ([#14959](https://www.github.com/tauri-apps/tauri/pull/14959) by [@thomaseizinger](https://www.github.com/tauri-apps/tauri/../../thomaseizinger)) Add new `html-manipulation-2` and `build-2` feature flags that use `dom_query` instead of `kuchikiki` for HTML parsing / manipulation.
+  This allows downstream users to remove `kuchikiki` and its dependencies from their dependency tree.
+- [`1ef6a119b`](https://www.github.com/tauri-apps/tauri/commit/1ef6a119b1571d1da0acc08bdb7fd5521a4c6d52) ([#15115](https://www.github.com/tauri-apps/tauri/pull/15115) by [@FabianLars](https://www.github.com/tauri-apps/tauri/../../FabianLars)) Changed `toml` crate version from `0.9` to `">=0.9, <=1"`
+
 ## \[2.8.3]
 
 ### Bug Fixes

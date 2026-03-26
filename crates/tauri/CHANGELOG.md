@@ -1,5 +1,30 @@
 # Changelog
 
+## \[2.11.0]
+
+### New Features
+
+- [`2dd9b15a2`](https://www.github.com/tauri-apps/tauri/commit/2dd9b15a2bcab8e52c87b03a919b4a75567ad3ce) ([#15062](https://www.github.com/tauri-apps/tauri/pull/15062) by [@amrbashir](https://www.github.com/tauri-apps/tauri/../../amrbashir)) Add `data-tauri-drag-region="deep"` so clicks on non-clickable children will drag as well. Can still opt out of drag on some regions using `data-tauri-drag-region="false"`
+- [`093e2b47c`](https://www.github.com/tauri-apps/tauri/commit/093e2b47c01361c18783e9ff18750388e41650c5) ([#14484](https://www.github.com/tauri-apps/tauri/pull/14484) by [@lucasfernog](https://www.github.com/tauri-apps/tauri/../../lucasfernog)) Support creating multiple windows on Android (activity embedding) and iOS (scenes).
+- [`093e2b47c`](https://www.github.com/tauri-apps/tauri/commit/093e2b47c01361c18783e9ff18750388e41650c5) ([#14484](https://www.github.com/tauri-apps/tauri/pull/14484) by [@lucasfernog](https://www.github.com/tauri-apps/tauri/../../lucasfernog)) Added `dbus` feature flag (enabled by default) which is required for theme detection on Linux.
+
+### Enhancements
+
+- [`d730770bb`](https://www.github.com/tauri-apps/tauri/commit/d730770bb93d77358cfc6f1286f10187cef37362) ([#15117](https://www.github.com/tauri-apps/tauri/pull/15117) by [@sftse](https://www.github.com/tauri-apps/tauri/../../sftse)) Simplify async-sync code boundaries, no externally visible changes
+- [`4017a7ed7`](https://www.github.com/tauri-apps/tauri/commit/4017a7ed7313cebf912ef3af1e3b280855b6f100) ([#14908](https://www.github.com/tauri-apps/tauri/pull/14908) by [@joshuamegnauth54](https://www.github.com/tauri-apps/tauri/../../joshuamegnauth54)) Implement retrieving inner PathBuf from SafePathBuf to ease using APIs that require an owned PathBuf
+
+### What's Changed
+
+- [`d34497ef1`](https://www.github.com/tauri-apps/tauri/commit/d34497ef154eddcc36327a30dda06dc4748f6b20) ([#14862](https://www.github.com/tauri-apps/tauri/pull/14862) by [@Legend-Master](https://www.github.com/tauri-apps/tauri/../../Legend-Master)) The new window handler passed to `on_new_window` no longer requires `Sync`, and runs on main thread on Windows, aligning with other platforms
+
+### Dependencies
+
+- Upgraded to `tauri-build@2.5.7`
+- Upgraded to `tauri-runtime-wry@2.11.0`
+- Upgraded to `tauri-runtime@2.11.0`
+- Upgraded to `tauri-utils@2.9.0`
+- Upgraded to `tauri-macros@2.5.6`
+
 ## \[2.10.3]
 
 ### Dependencies

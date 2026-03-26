@@ -1,5 +1,27 @@
 # Changelog
 
+## \[2.9.0]
+
+### New Features
+
+- [`5a0ca7edb`](https://www.github.com/tauri-apps/tauri/commit/5a0ca7edbbc707199615a91845146e98b6f5e8ca) ([#14671](https://www.github.com/tauri-apps/tauri/pull/14671) by [@lucasfernog](https://www.github.com/tauri-apps/tauri/../../lucasfernog)) Added support to Liquid Glass icons.
+- [`5dc2cee60`](https://www.github.com/tauri-apps/tauri/commit/5dc2cee60370665af88c185684432e425b1c987d) ([#14793](https://www.github.com/tauri-apps/tauri/pull/14793) by [@Legend-Master](https://www.github.com/tauri-apps/tauri/../../Legend-Master)) Added support for `minimumWebview2Version` option support for the MSI (Wix) installer, the old `bundle > windows > nsis > minimumWebview2Version` is now deprecated in favor of `bundle > windows > minimumWebview2Version`
+
+  Notes:
+
+  - For anyone relying on the `WVRTINSTALLED` `Property` tag in `main.wxs`, it is now renamed to `INSTALLED_WEBVIEW2_VERSION`
+  - For `tauri-bundler` lib users, the `WindowsSettings` now has a new field `minimum_webview2_version` which can be a breaking change
+
+### Bug Fixes
+
+- [`fcb702ec4`](https://www.github.com/tauri-apps/tauri/commit/fcb702ec4d924e81943efaeebea8d3edb7289c33) ([#14954](https://www.github.com/tauri-apps/tauri/pull/14954) by [@acx0](https://www.github.com/tauri-apps/tauri/../../acx0)) Fix `build --bundles` to allow `nsis` arg in linux+macOS
+- [`c8d7003b2`](https://www.github.com/tauri-apps/tauri/commit/c8d7003b23657019a547fd7cdf3164834a28849a) ([#15102](https://www.github.com/tauri-apps/tauri/pull/15102) by [@ShaunSHamilton](https://www.github.com/tauri-apps/tauri/../../ShaunSHamilton)) Correct GitHub Release URL path for Linux i686 tooling.
+
+### Dependencies
+
+- Upgraded to `tauri-macos-sign@2.3.4`
+- Upgraded to `tauri-utils@2.9.0`
+
 ## \[2.8.1]
 
 ### Bug Fixes

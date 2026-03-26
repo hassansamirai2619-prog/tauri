@@ -1,5 +1,16 @@
 # Changelog
 
+## \[2.5.7]
+
+### Enhancements
+
+- [`d730770bb`](https://www.github.com/tauri-apps/tauri/commit/d730770bb93d77358cfc6f1286f10187cef37362) ([#15117](https://www.github.com/tauri-apps/tauri/pull/15117) by [@sftse](https://www.github.com/tauri-apps/tauri/../../sftse)) Simplify async-sync code boundaries, no externally visible changes
+
+### Dependencies
+
+- Upgraded to `tauri-utils@2.9.0`
+- Upgraded to `tauri-codegen@2.5.6`
+
 ## \[2.5.6]
 
 ### Dependencies
